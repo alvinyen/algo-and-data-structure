@@ -54,4 +54,8 @@ console.log(forVersionFactorial(2));
 console.log(forVersionFactorial(5));
 
 
-
+function combination (n, k) {
+    if ( n === 0 ) return 0;
+    if ( k === 1 ) return 1;
+    retrurn combination(n-1, k) + combination(n-1, k-1);
+}
